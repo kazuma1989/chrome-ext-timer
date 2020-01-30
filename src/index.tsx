@@ -1,15 +1,6 @@
-import { render } from 'preact'
-import { useState } from 'preact/hooks'
+import { h, render } from 'preact'
+import App from './App'
 
-function App() {
-  const [name, setName] = useState('')
-
-  return (
-    <div>
-      <h1>Hello {name?.toUpperCase() || 'World'}!</h1>
-      <input value={name} onInput={e => setName(e.currentTarget.value)} />
-    </div>
-  )
-}
+globalThis.h = h
 
 render(<App />, document.getElementById('root')!)
