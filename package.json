@@ -1,0 +1,21 @@
+{
+  "name": "chrome-ext-timer",
+  "version": "0.0.1",
+  "author": "kazuma1989 <kazuma.ebina@quipper.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "tsc": "tsc"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "dependencies": {
+    "preact": "^10.2.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
+  }
+}
