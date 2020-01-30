@@ -12,10 +12,8 @@
     // "import React" instead of "import * as React"
     "allowSyntheticDefaultImports": true,
 
-    // Required for Parcel with JSX.
-    "jsx": "react",
-
     // <div /> => h("div")
+    "jsx": "react",
     "jsxFactory": "h",
 
     // Useful type checks.
