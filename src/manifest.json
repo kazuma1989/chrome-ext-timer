@@ -1,10 +1,12 @@
 {
   "manifest_version": 2,
   "name": "DS Timer",
-  "version": "0.1.0",
-
-  "browser_action": {
-    "default_title": "DS Timer",
-    "default_popup": "index.html"
-  }
+  "version": "0.1.1",
+  "content_scripts": [
+    {
+      "matches": ["https://jira.rmp-platform.com/secure/*"],
+      "css": ["index.css"],
+      "js": ["index.js"]
+    }
+  ]
 }

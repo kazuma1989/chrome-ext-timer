@@ -1,6 +1,7 @@
 import { h, render } from 'preact'
 import App from './App'
 
-globalThis.h = h
+const root = document.createElement('div')
+document.body.appendChild(root)
 
-render(<App />, document.getElementById('root')!)
+render(<App />, root)
