@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Document</title>
 
     <style>
@@ -18,11 +19,25 @@
         height: 100%;
         background-color: gainsboro;
       }
+
+      body {
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      }
+      input {
+        border: solid 10px blue;
+      }
     </style>
+
     <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <h1>Parent content</h1>
+      <input type="text" />
+    </div>
 
     <script src="./index.tsx"></script>
   </body>
