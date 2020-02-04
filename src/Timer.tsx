@@ -1,5 +1,6 @@
 import { h } from 'preact'
 import { useState, useEffect } from 'preact/hooks'
+import css from './css'
 
 export default function Timer() {
   const [msec, setMsec] = useState(0)
@@ -11,7 +12,17 @@ export default function Timer() {
     return () => clearInterval(timer)
   }, [])
 
-  return <div>{msecToTime(msec)}</div>
+  return (
+    <div class="timer">
+      <style>{css`
+        .timer {
+          font-family: 'Courier New', Courier, monospace;
+        }
+      `}</style>
+
+      <div>{msecToTime(msec)}</div>
+    </div>
+  )
 }
 
 function msecToTime(msec: number): string {
